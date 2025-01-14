@@ -1,0 +1,35 @@
+batch_size: 6
+data: "dos_0-18hz_4096d_299_nmax100.pt"
+decay_epochs: 90
+decay_rate: 0.1
+depths:
+- 1
+- 1
+drop: 0.3
+drop_path: 0
+embed_dims:
+- 192
+- 96
+epochs: 1000
+eval_metric: loss
+in_chans: 1
+layer_decay: null
+load_epoch: ''
+local_rank: 2
+lr: 0.001
+model:
+momentum: 0.9
+num_classes: 8
+num_heads:
+- 6
+- 3
+opt: adamw
+opt_kwargs: {}
+sched: cosine
+seed: 42
+warmup_epochs: 5
+warmup_lr: 1.0e-05
+weight_decay: 2.0e-05
+window_size: 70
+work_dir: ''
+workers: 4
